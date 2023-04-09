@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@200;300;400;500&family=Inter:wght@100;200;300;400;500;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Escola DNC</title>
+</head>
+<body>
+    <!-- MENU SUPERIOR -->
+    <div id="menusup">
+        <img src="img/menu-logo.svg" alt="DNC" id="logo">
+        <h1 id="title-1">
+            <black> Dê os primeiros passos da <br> sua carreira em Tecnologia </black>
+        </h1>
+        <br><br>
+        <p id="text-1">
+            Inscreva-se no curso gratuito de Introdução à <br>
+            Tecnologia da Escola DNC e aprenda os principais <br>
+            fundamentos para construir experiências efetivas.
+        </p>
+        <br><br>
+    </div>
+    <!-- MENU INFORMATIVO -->
+    <div id="menuinform" class="container">
+        <p class="text-inform"> <img class="icone" src="icon/icon-certificado.svg" alt="ERROR"> Certificado de conclusão</p>
+        <p class="text-inform"> <img class="icone" src="icon/icon-relogio.svg" alt="ERROR"> 4 horas de conteúdo</p>
+        <p class="text-inform"> <img class="icone" src="icon/icon-camera.svg" alt="ERROR"> Aulas online gravadas</p>
+    </div>
+    <!-- SEÇÃO COM VÍDEO -->
+    <div id="section-video" class="container">
+        <iframe controls=1 loop=1 width="502" height="283" style="margin:75px" src="https://www.youtube.com/embed/rdINp5rZgxU?list=PLFWVHlDdL6J1e7Dw7H1-HVUtZVkNK4cKb" title="Conheça a DNC | Web Série - Episódio #01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div>
+            <h1 id="title-2">Aprenda com especialistas <br> e comece seu primeiro projeto</h1>
+            <br>
+            <p>Conheça o processo de desenvolvimento e entenda como utilizar <br>
+                os principais métodos e ferramentas da área para resolver <br>
+                problemas complexos.</p>
+            <br>
+            <p>Conquiste seu certificado e desenvolva um projeto prático para <br> aplicar seus conhecimentos.</p>
+        </div>
+    </div>
+
+    <!-- CARROSSEL -->
+    <div id="carrossel">
+        <h1 id="title-3">Mais de 500 alunos já iniciaram seus estudos</h1>
+        <div id="section-card" class="container">   
+            <img src="icon/icon-seta-esquerda.svg" class="seta-carrossel" onclick="Esquerda()" id="seta-esquerda">  <!-- ADICIONAR FUNCIONALIDADE -->
+                <!--
+                <div class="card ; container" id="bruna">
+                    <img src="photos/photo-bruna.svg" alt="ERROR" class="photo-card">
+                    <p style="text-align: justify;">“O curso foi o ponto de partida <br> 
+                        da minha transição de carreira.  Hoje <br> 
+                        já consegui minha primeira vaga na área!”<br> <br> 
+                        <strong> Bruna, desenvolvedora Front-End </strong></p>
+                </div>
+                
+                <div class="card ; container" id="leonardo">
+                    <img src="photos/photo-leonardo.svg" alt="ERROR" class="photo-card">
+                    <p style="text-align: justify;">“Gostei muito da 
+                        metodologia e da <br> 
+                        plataforma da Escola DNC. Os materiais <br> 
+                        são todos muito bons”<br> <br> 
+                        <strong> Leonardo, desenvolvedor Back-End </strong></p>
+                </div>
+            
+                <div class="card ; container" id="samantha"> --> <!-- DISPLAY: NONE -->
+                <!--  <img src="photos/photo-samantha.svg" alt="ERROR" class="photo-card">
+                    <p style="text-align: justify;">“O curso da foi a mudança que eu <br> 
+                        precisava para alcançar meus<br> 
+                        objetivos profissionais”<br> <br> 
+                        <strong> Samantha, desenvolvedora Front-End </strong></p>
+                </div>
+
+                <div class="card ; container" id="bruna2">
+                    <img src="photos/photo-bruna.svg" alt="ERROR" class="photo-card">
+                    <p style="text-align: justify;">“O curso foi o ponto de partida <br> 
+                        da minha transição de carreira.  Hoje <br> 
+                        já consegui minha primeira vaga na área!”<br> <br> 
+                        <strong> Bruna, desenvolvedora Front-End </strong></p>
+                </div> -->
+            
+                <img class="card" src="card/card-bruna.svg" id="card1" alt="">
+                <img class="card" src="card/card-samantha.svg" id = "card2" alt="">
+            <img src="icon/icon-seta-direita.svg" class="seta-carrossel" onclick="Direita()" id="seta-direita">  <!-- ADICIONAR FUNCIONALIDADE -->
+        </div>
+    </div>
+
+    <!-- FORMULÁRIO -->
+    <div id="formulario">
+        <h2> <strong>Comece agora mesmo e dê o próximo passo da sua carreira</strong> </h2>
+    </div>
+    <form action="https://formspree.io/f/xayzlqdd" method="POST" >
+        <input type="text" name="nome" placeholder="Nome"> <br>
+        <input type="email" name="email" placeholder="E-mail"> <br>
+        <input type="text" name='telefone' placeholder="Telefone"> <br>
+        <button type="submit"> <strong>Acesse a ementa grátis</strong> </button> <!-- ADICIONAR FUNCIONALIDADE -->
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
